@@ -1,0 +1,191 @@
+/* tipos de selectores */
+/* Selector universal (*) */
+/* Este selector aplica a toda la página */
+
+/**{
+	border: 1px solid red;
+	margin: 1opx;
+}*/
+
+/*selector de etiqueta*/
+header{
+	background: rgb(134,145,144);
+}
+
+body {
+	background: peru;
+}
+
+/*selector en cascada */
+/*Se indica que cierto tag dentro de otro se le aplicará el estilo*/
+article h3{
+	background: orange;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*selectores de clase*/
+.title-a{
+	font-size: 70px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.title-b{
+	background: green;
+}
+
+/*selector de id*/
+#header{
+
+}
+
+#guitarras{
+
+}
+
+.portada{
+	background-image: url('../img/background.png');
+}
+
+/*Tipos de display: inline, significa que muestra todos los elementos que se encuentran en le etiqueta en línea hacia la derecha (Texto, etiquetas, etc)*/
+/*Tipos de display: Block, significa que muestra todos los elementos que se encuentran en la etiqueta en bloque o lista*/
+/*Tipos de display: List-Item, significa que muestra todos los elementos que se encuentran en la etiqueta en lista*/
+/*Nota: los tipos de display vienen predefinidos por el navegador de acuerdo al elemento que se utiliza, sin embargo se puede cambiar el tipo de 
+display utilizando CSS*/
+
+/*por ejemplo ahora quiero que todos los elementos li del menu queden como inline*/
+
+.menu {
+	font-size: 24px;
+	display: inline-block;
+}
+
+.menu li{
+	display: inline-block;
+}
+
+/*pseudoetiquetas*/
+.menu li:after{
+	content: '*';
+	font-size: 30px;
+}
+
+.logotipo{
+	display: inline-block;
+}
+
+/*modelo de caja*/
+
+*{
+	padding: 10px;
+	margin: 10px;
+	border: 0px solid black;
+	/*También podría ser*/
+/*	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-right: 10px;
+*/	/*o bien podría ser padding: 10px, 10px, 10px, 10px siguiendo el orden izquierda, arriba, derecha, abajo*/
+}
+
+/*usando contenedores*/
+/*la idea de utilizar contenedores es que tengan atributos
+ comunes y puedan ser llamados en cada etiqueta (Se puede referenciar mas de una clase en cada etiqueta)*/
+/*la etiqueta div no agrega valor semántico a la sintaxis, simplemente permite agregar efectos visuales*/
+/*Sintaxis
+<div>
+	etiquetas que deseo formatear
+</div>*/	
+
+/*otra caracteristica de css se llama floating se agrega en la clase*/
+
+.guitarra img{
+	float: right;
+}
+
+.derecha{
+	float: right;
+	position: relative;
+	top: -127px;
+	left: 80px;
+}
+
+.izquierda{
+	float: left;
+}
+
+/*a veces cuando se utiliza float se descuadra un poco el modelo de cajas, para eso hay que usar una propiedad llamada overflow*/
+
+.guitarra{
+	overflow: hidden;
+	border: 1px solid;
+	border-radius: 20px;
+}
+
+/*utilizacion de position para mover elementos fuera del modelo de vaja (que se superpongan por ejemplo)*/
+/*Position static, relative (Relativa a la caja donde se encuentra), absolute (Con respecto a la pagina) o fixed (Deja el elemento estático en la pagina aunque el resto se mueva*/
+/*/subpropiedades left, right, bottom, right*/
+
+.header{
+	position: relative;
+
+}
+
+.footer {
+	display: flex;
+	background: #273b47;
+
+/*.contacto img{
+	display: flex;
+}*/
+
+.contacto{
+	display: flex;
+}
+
+/*.contacto strong{
+	display: block;
+}*/
+
+a{
+	text-decoration: none;
+}
+
+.formulario{
+	display: flex;
+}
+
+.footer .contenedor{
+	display: flex;
+}
+
+.contenedor{
+	display: flex;
+
+}
+
+table{
+	width: 100%;
+	border: 1px;
+	border-collapse: collapse;
+}
+
+th{
+	background: #273b47;
+	color: white;
+	padding: 10px;
+}
+
+td{
+	padding: 20px;
+}
+
+.button {
+	border-radius: 5px;
+	border: none;
+	padding: 7px;
+	font-size: 15px
+	background: #fb324e;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+}
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invie - tus mejores guitarras!!</title>
+	<meta charset="utf-8"/>   <!-- Permite la visualización correcta de acentos y ñ (caracteres del idioma español) -->
+	<!--<style type="text/css">
+		body {
+			background: rgb(134,143,134);
+		}
+	</style> -->
+	<link rel="stylesheet" type="text/css" href="css/invie.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- CDN Archivo de fuentes. Se carga en forma externa, podemos verlo en la sección network del inspector javascript de google, le navegador cargará uno por cada fuente que se utilice, las fuentas están en css -->
+</head>
+<body>
+	<!-- 3 formas de agregar estilos, en línea, agregando propiedades como se ve en el header -->
+	<!-- Segunda forma utilizando etiqueta style dentro del cuerpo del html tal como se ve en la sección style del head. Las páginas cargarían más rapido -->
+	<!-- La tercera forma es utilizando archivos externos, la contra es que cada archivo adjunto representa una petición al servidor -->
+	<!-- el orden de prioridad si existieran las 3 es 1 en linea, 2 etiqueta style y 3 archivo referenciado. -->
+
+	<section id="portada" class="portada">
+		<header id="header" class="header"> <!-- header -->
+	<!-- id: Identifica unívocamente una sección y tener navegación dentro de una misma página-->
+		<figure class="logotipo"> <!-- Logotipo. es una buena práctica comentar los elementos con los nombres de las clases --> 
+			<img src="img/invie.png" width="186" height="60" alt="Invie Logotipo">
+		</figure>
+		<!-- Menu -->
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>				
+				<li>
+					<a href="#guitarras">Guitarras</a>
+				</li>				
+				<li>
+					<a href="precios.html">Precios</a>
+				</li>				
+			</ul>
+		</nav>
+		</header>
+
+		<!-- portada -->
+		<!-- Titulo -->
+		<!-- Resumen -->
+		<!-- Boton -->
+		<h1>
+			Guitarras invisibles   <!-- sólo 1 h1 por página, los buscadores analizan esta información, es bueno para el SEO -->
+		</h1>
+		<h3>
+			Se la estrella de Rock que siempre quisiste ser <!-- Los h van en orden de relevancia desde h1 hasta el h6 -->
+		</h3>
+		<button>
+			<a href="" class="button">Conoce más</a>  
+		</button>
+	</section>
+	<section id="guitarras" class="guitarra">
+		<!-- guitarras -->
+		<h2>
+			Nuestras guitarras
+		</h2>
+		<article>
+			<img class="derecha" src="img/invie-acustica.png" width="200" />
+			<h3 class="title-b">Invie acústica</h3>
+			<ol>
+				<li>Estilo Vintage</li>
+				<li>Madera pura</li>
+				<li>Incluye estuche invisible de aluminio</li>
+			</ol>
+		</article>		
+		<article>
+			<img class="izquierda" src="img/invie-classic.png" width="200" />
+			<h3>Invie clásica</h3>
+			<ol>
+				<li>Estilo Vintage</li>
+				<li>Liviana</li>
+				<li>Inicia tu camino como rockstar</li>
+			</ol>
+		</article>
+	</section>
+	<footer class="footer">
+	<div class="contenedor">
+		<div class="contacto">
+			<img src="/img/invie-white.png"/>
+			<a href="tel:"><strong>Teléfono</strong><span>+56978775781</span></a> <!-- tel se encarga de levantar el sistema de discado activo vigente en el computador -->
+			<a href="mailto:dschiaroli@gmail.com"><strong>email</strong><span>dschiaroli@gmail.com</span></a>
+		</div>
+		<div class="formulario">
+			<form class="formulario">
+				<label for="nombre">Nombre</label>
+				<input type="text" name="" id="nombre"/>
+				<label for="email">Email</label>
+				<input type="email" required id="email"/>
+				<div class="sexo">
+					<label for="mujer">
+						<input type="radio" id="mujer" value="mujer"/>mujer
+					</label>
+					<label for="hombre">
+						<input type="radio" id="nombrer" value="hombre"/>mujer
+					</label>
+				</div>
+				<div class="intereses">
+					<label for="cotizacion">Cotización</label>
+					<input type="checkbox" id="cotizacion" name="intereses">
+					<label for="reclamos">Reclamos</label>
+					<input type="checkbox" id="reclamos" name="intereses">
+					<label for="comentarios">Comentarios</label>
+					<input type="checkbox" id="comentarios" name="intereses">					
+					<label for="otros">Otros</label>
+					<input type="checkbox" id="otros" name="intereses">										
+				</div>	
+				<div class="comentarios">
+					<label for="comentarios">Comentarios</label>
+					<textarea cols="30" rows="10" id="comentarios"></textarea>
+					<input type="input" name="" value="Enviar"/>
+				</div>
+			</form>
+		</div>
+	</div>	
+	</footer>
+</body>
+</html>
